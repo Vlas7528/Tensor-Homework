@@ -1,7 +1,3 @@
-# from modules.random_key import random_key_gen
-# from modules.file_work import write_to_file
-# from modules.file_work import read_from_file
-# from modules.xor_encryption import xor
 import xor_modules as xor
 
 def menu():
