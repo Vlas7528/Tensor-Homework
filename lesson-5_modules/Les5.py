@@ -1,4 +1,5 @@
-from Les5_Module import input_check, input_check1, input_check2, input_check3_1, input_check3_2
+from Les5_Module import input_check, input_check1, input_check2
+from Les5_Module import input_check3_1, input_check3_2
 from decimal import Decimal
 from math import sqrt
 import math
@@ -50,9 +51,12 @@ def dz2_1(s, **word_count_dictionary):
 
 def dz2_2(s, word_count,symb_count):
     symbol_open = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-                   'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
-                   'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
-                   'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3' ,'4', '5', '6', '7', '8', '9'
+                   'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 
+                   'u', 'v', 'w', 'x', 'y', 'z', 
+                   'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 
+                   'K', 'L', 'M', 'N', 'O', 'P',
+                   'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 
+                   '0', '1', '2', '3' ,'4', '5', '6', '7', '8', '9'
                   )
     symbol_close = (')', ']', '}', '>', ' ', ',',
                     '!', '?', ':', ';', '.'
@@ -69,9 +73,12 @@ def dz2_2(s, word_count,symb_count):
 
 def dz2_3(s, sentence_count, symb_count):
     symbol_open = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-                   'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
-                   'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
-                   'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3' ,'4', '5', '6', '7', '8', '9'
+                   'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 
+                   'u', 'v', 'w', 'x', 'y', 'z', 
+                   'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 
+                   'K', 'L', 'M', 'N', 'O', 'P',
+                   'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 
+                   '0', '1', '2', '3' ,'4', '5', '6', '7', '8', '9'
                   )
     is_prev_char_letter = False
     for i in range(len(s)):
