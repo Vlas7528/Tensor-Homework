@@ -1,5 +1,6 @@
 from Les3_Module import prime_number, greatest_common_factor, least_common_multiple
-from Les3_Module import input_word_check, input_number_check, input_word_check1, input_number_check1
+from Les3_Module import input_word_check, input_number_check, input_word_check1
+from Les3_Module import input_number_check1
 from decimal import Decimal
 from math import sqrt
 import cmath
@@ -73,7 +74,8 @@ min1, max2 = input_number_check()
 print('Задайте число, частоту встречаемоcти которого вы хотите найти в заданном диапозоне')
 dig = str(input())
 diap = int(max2) - int(min1) + 1
-print('Частота встречаемости вашего числа', sum(int(min1) for i in range(int(min1), int(max2) + 1) if dig in str(i)))
+print('Частота встречаемости вашего числа', 
+     sum(int(min1) for i in range(int(min1), int(max2) + 1) if dig in str(i)))
 
 
 # Задание #6
